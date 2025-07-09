@@ -1,0 +1,121 @@
+.about{
+    font-family: poppins;
+    animation: show_about 1s;
+}
+
+.closeBtn{
+    padding: 1.5rem 0 0 0;
+    width:40px;
+    float: right;
+    cursor: pointer;
+}
+
+.title{
+    text-align: center;
+    padding:4rem 0 0 0;
+    font-size: 50px;
+    font-weight: bolder;
+    margin:0;
+    letter-spacing: 12px;    
+    
+}
+
+.white{
+    background:white;
+    height:100%;
+    width:50%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: -999;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.yellow{
+    background:linear-gradient(to right,#E8A719, #FFCB12);
+    height:100%;
+    width:50%;
+    position:fixed;
+    top:0;
+    right:0;
+    z-index: -999;
+    overflow: hidden;
+}
+
+article{
+    position: absolute;
+    text-align: right;
+    top:20%;
+    right:2%;
+    line-height: 1.8rem;
+}
+
+.skill-wrapper{
+    margin:5rem 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.skill-wrapper figcaption{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    color:#0047FF;
+    margin: 0 0 1rem 0
+}
+
+.skill-wrapper div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0.8rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+    width:400px;
+    background:#31d4f819;
+    margin: 1rem 0 0 0;
+    border-radius: 50px;
+    box-shadow: 1px 5px 5px rgba(0,0,0,0.05);
+}
+
+.yellow .logoBg{
+    width: 500px;
+    position:absolute;
+    right:-35%;
+    top:0;
+}
+
+.skill-wrapper .man{
+    width: 450px;
+    
+}
+
+.reach-me{
+    padding: 0.5rem 1rem;
+    background: #0047FF;
+    color: white;
+    border:none;
+    font-family: poppins;
+    cursor:pointer;
+    position:relative;
+    cursor:pointer;
+    transition: 0.3s;
+    margin: 2rem 0 0 0;
+}
+
+.reach-me:hover{
+    background: darkblue;
+    border-radius: 30px;
+}
+
+@keyframes show_about {
+    from {
+        /* top:150%; */
+        opacity:0;
+    }
+    to{
+        /* top:45%; */
+        opacity:1;
+    }
+}

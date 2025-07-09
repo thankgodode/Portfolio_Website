@@ -1,0 +1,100 @@
+.drop-mail{
+    animation: show_mail 1s;
+}
+
+.drop-mail h1{
+    color: #dff9ff;
+}
+
+.form-wrapper{
+    display: flex;
+    flex-direction: column;
+    /* height: 300px; */
+    width: 350px;
+    padding:5rem 3rem;
+    border-radius: 30px;
+    background: #dff9ff71;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    left:50%;
+    transform:translate(-50%);
+    font-family: poppins;
+    box-shadow: 1px 8px 7px rgba(0,0,0,0.07);
+    
+}
+
+.form-wrapper form{
+    width: 100%;
+}
+
+form label{
+    color: #E8A719;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+form input{
+    width:100%;
+    border: none;
+    border-bottom: 2px solid #E8A719;
+    background: none;
+    outline: none;
+    font-size: 18px;
+    height:30px;
+
+
+}
+
+form button{
+    float: right;
+    padding: 0.5rem 2.4rem;
+    border: none;
+    background: #0047FF;
+    border-radius: 20px;
+    cursor:pointer;
+    font-family:poppins;
+    color: white;
+}
+
+.contact{
+    margin: 3rem 0 0 0;
+
+}
+
+.contact img{
+    width:20px;
+    padding: 0 10px;
+}
+
+.drop-mail-bgLogo{
+    width: 500px;
+    position:fixed;
+    bottom:-30%;
+    left:50%;
+    transform:translate(-50%);
+    rotate: 315deg;
+    z-index: -1;
+}
+
+textarea{
+    width:100%;
+    border:none;
+    border: 2px solid #E8A719;
+    border-radius: 5px;
+    background: transparent;
+
+    height: 80px;
+    resize:none
+}
+
+@keyframes show_mail {
+    from {
+        /* top:150%; */
+        opacity:0;
+    }
+    to{
+        /* top:45%; */
+        opacity:1;
+    }
+}
