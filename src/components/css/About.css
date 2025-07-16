@@ -6,7 +6,9 @@
 .closeBtn{
     padding: 1.5rem 0 0 0;
     width:40px;
-    float: right;
+    /* float: right; */
+    position:absolute;
+    right:2%;
     cursor: pointer;
 }
 
@@ -52,7 +54,7 @@ article{
 }
 
 .skill-wrapper{
-    margin:5rem 0 0 0;
+    margin:8.4rem 0 0 0;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -117,5 +119,82 @@ article{
     to{
         /* top:45%; */
         opacity:1;
+    }
+}
+
+@media screen and (max-device-width: 480px) {
+
+    .about .title span{
+        font-size: 2.5rem;
+        color: black !important;
+        letter-spacing: 0.3rem;
+    }
+
+    .white{
+        position: relative;
+        width: 100%;
+        background:none;
+        height:100px;
+    }
+
+    .yellow{
+        background:linear-gradient(to right, #efbf20, #FFF212);
+        height:400px;
+        width:400px;
+        border-radius: 50%;
+        position:fixed;
+        top:-30%;
+        right:-5%;
+        z-index: -999;
+        filter: blur(100px);
+        overflow: hidden
+    }
+
+    article{
+        text-align: left;
+        margin:0.87rem 0 0 0;
+        padding: 0;
+        left:0;
+        top:0;
+        font-size: 0.87rem;
+        line-height: 1.7rem;
+    }
+
+    .yellow img{
+        display:none;
+    }
+
+    .skill-wrapper{
+        margin:4.5rem 0 0 0;
+    }
+
+    .skill-wrapper div{
+        display:grid;
+        grid-template-columns: 0.35fr 0.8fr;
+        width:91%;
+    }
+
+    .skill-wrapper .man{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1128px) {
+
+    .skill-wrapper{
+        position: relative;
+        width:100%;
+    }
+
+    article{
+        top:12%;
+    }
+    .skill-wrapper figcaption{
+        margin:8rem 0 0 0;
+    }
+
+    .skill-wrapper .man{
+        width:330px;
+        margin:8rem 0 0 0;
     }
 }

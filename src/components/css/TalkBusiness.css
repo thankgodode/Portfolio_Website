@@ -42,6 +42,15 @@ hr{
     cursor:pointer;
 }
 
+@media screen and (max-width:480px) {
+    .talk-business-bgLogo{
+        width: 400px;
+        rotate: 180deg;
+        left:70%;
+        z-index: -1;
+    }
+}
+
 @keyframes show_talk {
     from {
         /* top:150%; */

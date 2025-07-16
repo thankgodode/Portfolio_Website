@@ -33,6 +33,10 @@ header ul li{
 
 }
 
+header .hamburger{
+   display: none;
+}
+
 header ul li::before{
    content:"";
    width: 0;
@@ -77,4 +81,78 @@ header h4:hover{
    from{
       transform: rotate(360deg);
    }
+}
+
+
+/* Mobile Phone Mode*/
+@media screen and (max-device-width: 480px) {
+   header{
+      position: relative;
+   }
+   header img{
+      width:40px;
+   }
+   header ul{
+      display:inline-block;
+      background:#DE9B07;
+      height: 100%;
+      position: fixed;
+      top:0;
+      right:-40%;
+      padding:4.5rem 0.8rem;
+      display: block;
+      transition: 0.5s;
+      z-index: 2;
+   }
+
+   .show-nav{
+      right:0;
+   }
+   
+   header ul li{
+      color:white;
+      padding:0.6rem 0;
+      text-align: right;
+   }
+
+   header .hamburger{
+      display: block;
+      height:5px;
+      width:30px;
+      border-radius: 0.2rem;
+      background:#000;
+      float:left;
+      position:relative;
+      cursor: pointer;
+      z-index: 1000;
+   }
+
+   header .hamburger::after{
+      content:"";
+      width:100%;
+      height:100%;
+      background:#000;
+      border-radius: 0.2rem;
+      position:absolute;
+      margin: 0.6rem 0 0 0;
+      left:0;
+   }
+   header .hamburger::before{
+      content:"";
+      width:100%;
+      height:100%;
+      background:#000;
+      border-radius: 0.2rem;
+      position:absolute;
+      margin: -0.6rem 0 0 0;
+      left:0;
+   }
+
+   header h4{
+      position:absolute;
+      right:0;
+      margin: 3.5rem 0 0 0;
+      z-index: 1;
+   }
+   
 }

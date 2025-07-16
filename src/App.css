@@ -17,3 +17,48 @@
     transform-origin: right;
     background:#DE9B07
 }
+
+/* For Tablet*/
+/* @media (min-width:768px){
+    header{
+        background-color: blue;
+        height: 100px;
+        left: 200px;
+    }
+} */
+
+/* For Mobile Phones */
+/* @media (max-width:600px){
+    header{
+        background-color: orange;
+        height: 100px;
+    }
+} */
+
+/* Tablet Mode*/
+@media screen and (min-width: 500px) and (max-width: 1128px) {
+    section{
+        width:100px;
+    }
+}
+
+/* Phone Mode*/
+/* @media screen and (max-device-width: 480px) {
+
+    header{
+        position:relative;
+    }
+    header ul{
+      display: flex;
+      flex-direction: column;
+      height:100%;
+      width:200px;
+      left:50%;
+      top:0;
+      background:#DE9B07;
+      position:fixed;
+    }
+    header ul li{
+        color:white;
+    }
+} */

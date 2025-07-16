@@ -43,6 +43,11 @@ function DropMail() {
             console.log("Success!")
         } catch (error) {
             console.log("Failed", error)
+            setTimeout(() => {
+                setSendvalue("Send")
+            }, 1000);
+
+            setSendvalue("Error...")
         }
         // emailjs.sendForm("service_0nxx29b", "template_t04xojm", form.current, {
         //     publicKey:"e-k4uNfxxW5oi5yKS"

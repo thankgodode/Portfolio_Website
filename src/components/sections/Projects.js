@@ -92,7 +92,8 @@ function Projects() {
                         }
                     </div>
                 </div>
-                <img src={yelloLogo} alt="bgImage" className="projects-bgLogo"/>
+                <img src={yelloLogo} alt="Bg logo" className="projects-bgLogo" />
+                <div className="yellow"></div>
             </section>
         </>
     )    

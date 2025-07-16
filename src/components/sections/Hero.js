@@ -2,8 +2,10 @@ import Navbar from "../layouts/Navbar";
 import "../css/Hero.css"
 import run_image from "../../assets/run_logo.png"
 import transition from "../../transition";
+import bgLogo from "../../assets/bglogo.svg"
 
 function Hero() {
+
     return (
         <section className="home">
             <Navbar />  
@@ -22,7 +24,7 @@ function Hero() {
                 </div>
             </figure>
             <div className="bg1"></div>
-            <div className="bg2"></div>
+            <img src={bgLogo } className="bg2" />
             <footer>© 2022 All Right Reserved.</footer>
         </section>
     )
