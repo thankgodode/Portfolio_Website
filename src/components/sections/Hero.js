@@ -13,8 +13,8 @@ function Hero() {
                 <div className="wrapper">
                     <div className="right-side">
                         <span className="im">I'm</span>   
-                        <h1>Thankgod</h1>
-                        <h1>Daniel Ode</h1>
+                        <h1>THANKGOD</h1>
+                        <h1>ODE</h1>
                         <h5>I am your one-stop mobile, web <br/>and desktop app engineer.</h5>
                     </div>
                     <div className="left-side">
@@ -25,7 +25,7 @@ function Hero() {
             </figure>
             <div className="bg1"></div>
             <img src={bgLogo } className="bg2" />
-            <footer>© 2022 All Right Reserved.</footer>
+            <footer>©2025 All Right Reserved.</footer>
         </section>
     )
 }
