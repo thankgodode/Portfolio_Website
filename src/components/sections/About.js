@@ -1,9 +1,7 @@
 import "../css/About.css"
 import Skills from "../layouts/Skills"
 import whiteLogo from "../../assets/yellow.svg"
-import man from "../../assets/man.png"
 
-import closeBtn from "../../assets/close.png"
 import { Link } from "react-router-dom"
 import { FaTimes } from "react-icons/fa"
 

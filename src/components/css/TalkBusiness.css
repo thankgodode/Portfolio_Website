@@ -42,6 +42,11 @@ hr{
     cursor:pointer;
 }
 
+.contact{
+    gap:30px;
+    display:"flex";
+}
+
 @media screen and (max-width:480px) {
     .talk-business-bgLogo{
         width: 400px;

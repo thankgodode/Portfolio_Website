@@ -1,5 +1,4 @@
 import { FaBars,FaTimes } from "react-icons/fa"
-import {RiCloseLine} from "react-icons/ri"
 import logo from "../../assets/logo.png"
 import "../css/Navbar.css"
 import "@fontsource/poppins"
