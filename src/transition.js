@@ -7,7 +7,7 @@ function transition(OgComponent) {
             <motion.div
                 className="slide-in"
                 initial={{
-                    scaleX: 0
+                    scaleX: 1
                 }}
                 animate={{
                     scaleX: 0

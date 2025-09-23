@@ -5,6 +5,7 @@ import data from "../../data/projects_info"
 
 import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
+import { FaTimes } from "react-icons/fa"
 
 
 function Projects() {
@@ -21,18 +22,17 @@ function Projects() {
             }
         })
         setCategory(e.target.textContent.toLowerCase())
-        console.log(category)
     }
 
     return (
         <>  
             <section className="projects-section">
-                <Link to="/"><img src={closeBtn} alt="close" className="closeBtn" /></Link>
+                <Link to="/"><FaTimes size={24} className="closeBtn" color="red"/></Link>
                 <h1 className="title">Projects Done</h1>
                 <p>Checkout completed projects of mine!</p>
                 <div className="projects">
                     <ul>
-                    <li className="show" onClick={previewProjects}><strong>All</strong></li>
+                        <li className="show" onClick={previewProjects}><strong>All</strong></li>
                         <li className="" onClick={previewProjects}><strong>App</strong></li>
                         <li className="" onClick={previewProjects}><strong>Graphics</strong></li>
                         <li onClick={previewProjects}><strong>UI/UX</strong></li>

@@ -5,12 +5,13 @@ import man from "../../assets/man.png"
 
 import closeBtn from "../../assets/close.png"
 import { Link } from "react-router-dom"
+import { FaTimes } from "react-icons/fa"
 
 function About() {
     return (
         <>
             <section className="about">
-                <Link to="/"><img src={closeBtn} alt="close" className="closeBtn"/></Link>
+                <Link to="/"><FaTimes size={24} className="closeBtn" color="red"/></Link>
                 <div className="yellow">
                     <img src={whiteLogo} alt="logoBg" className="logoBg" />
                 </div>

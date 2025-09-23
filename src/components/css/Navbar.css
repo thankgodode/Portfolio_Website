@@ -8,7 +8,7 @@ header{
 }
 
 header img{
-   width:45px;
+   width:30px;
    cursor:pointer;
    transition: 0.5s ease-in
 }
@@ -90,7 +90,7 @@ header h4:hover{
       position: relative;
    }
    header img{
-      width:40px;
+      width:35px;
    }
    header ul{
       display:inline-block;
@@ -98,7 +98,8 @@ header h4:hover{
       height: 100%;
       position: fixed;
       top:0;
-      right:-40%;
+      right:-100%;
+      width:200px;
       padding:4.5rem 0.8rem;
       display: block;
       transition: 0.5s;
@@ -112,7 +113,7 @@ header h4:hover{
    header ul li{
       color:white;
       padding:0.6rem 0;
-      text-align: right;
+      text-align: left;
    }
 
    header .hamburger{

@@ -11,6 +11,7 @@ import transition from "../../transition"
 
 import { useRef, useState } from "react"
 import emailjs from "@emailjs/browser"
+import { FaTimes } from "react-icons/fa"
     
 function DropMail() {
     const [sendValue, setSendvalue] = useState("Send")
@@ -61,7 +62,7 @@ function DropMail() {
     return (
         <>
             <section className="drop-mail">
-                <Link to="/"><img src={closeBtn} alt="close" className="closeBtn"/></Link>
+                <Link to="/"><FaTimes size={24} className="closeBtn" color="red"/></Link>
                 <h1 className="title">DROP A MAIL</h1>
                 <div className="form-wrapper">
                     <form ref={form} onSubmit={sendEmail}>

@@ -10,12 +10,13 @@ import yelloLogo from "../../assets/white.svg"
 
 import { Link } from "react-router-dom"
 import transition from "../../transition"
+import { FaTimes } from "react-icons/fa"
 
 function TalkBusiness() {
     return (
         <>
             <section className="talk-business">
-                <Link to="/"><img src={closeBtn} alt="close" className="closeBtn"/></Link>
+                <Link to="/"><FaTimes size={24} className="closeBtn" color="red"/></Link>
                 <div className="freelance">
                     <h1>Lets talk Business</h1><br/>
                     <a href="https://fiverr.com/s/Gza8XIL" target="_blank"><img src={fiverr} className="fiverr"/></a><br/>

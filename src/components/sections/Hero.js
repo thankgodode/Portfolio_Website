@@ -15,7 +15,7 @@ function Hero() {
                         <span className="im">I'm</span>   
                         <h1>THANKGOD</h1>
                         <h1>ODE</h1>
-                        <h5>I am your one-stop mobile, web <br/>and desktop app engineer.</h5>
+                        <h5>I am your one-stop mobile, web <br />and desktop app engineer.</h5>                        
                     </div>
                     <div className="left-side">
                         <img src={run_image} alt="Running image" />

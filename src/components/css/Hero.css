@@ -215,8 +215,8 @@ footer{
 
     .home .bg1{
         position:fixed;
-        height:400px;
-        width: 400px;
+        height:300px;
+        width: 300px;
         background:linear-gradient(to right, #efbf20, #FFF212);
         right:-50%;
         top:-10%;
