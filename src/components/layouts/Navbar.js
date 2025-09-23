@@ -16,12 +16,19 @@ function Navbar() {
         setShow(!show)
         
         nav.classList.toggle("show-nav")
-        console.log(nav)
         
     }
 
     return (
         <>
+            <div className="overlay" style={{ zIndex: 1 }}
+                onClick={() => {
+                    const nav = document.querySelector("ul")
+                    setShow(false)
+        
+                    nav.classList.remove("show-nav")
+                }}
+            ></div>
             <header>
                 <img src={logo} alt="logo" />
                 <ul onClick={showNavbar}>

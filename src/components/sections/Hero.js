@@ -5,7 +5,6 @@ import transition from "../../transition";
 import bgLogo from "../../assets/bglogo.svg"
 
 function Hero() {
-
     return (
         <section className="home">
             <Navbar />  
