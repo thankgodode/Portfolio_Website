@@ -30,10 +30,10 @@ function Navbar() {
                     <Link style={{ textDecoration: 'none'}} to="/projects"><li>Projects</li></Link>
                 </ul>
                 <Link style={{ textDecoration: 'none' }} to="/drop-mail"><h4>Drop a Mail</h4></Link>
-                {/* <div className="hamburger" onClick={showNavbar}></div> */}
-                {!show && <FaBars size={24} onClick={showNavbar} style={{ zIndex: 10 }}/>}
-                {show && <FaTimes size={24} onClick={showNavbar} style={{ zIndex: 10 }} color="red"/>}
-                
+                <div className="hamburger">
+                    {!show && <FaBars size={24} onClick={showNavbar} style={{ zIndex: 10 }}/>}
+                    {show && <FaTimes size={24} onClick={showNavbar} style={{ zIndex: 10 }} color="red"/>}
+                </div>
             </header>
         </>
     )

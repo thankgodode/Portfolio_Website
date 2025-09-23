@@ -29,7 +29,7 @@ function Projects() {
             <section className="projects-section">
                 <Link to="/"><FaTimes size={24} className="closeBtn" color="red"/></Link>
                 <h1 className="title">Projects Done</h1>
-                <p>Checkout completed projects of mine!</p>
+                <p>Checkout some projects I've worked on!</p>
                 <div className="projects">
                     <ul>
                         <li className="show" onClick={previewProjects}><strong>All</strong></li>
@@ -92,7 +92,7 @@ function Projects() {
                         }
                     </div>
                 </div>
-                <img src={yelloLogo} alt="Bg logo" className="projects-bgLogo" />
+                <img src={yelloLogo} alt="Bg logo" className="projects-bgLogo" style={{zIndex:-1}} />
                 <div className="yellow"></div>
             </section>
         </>
