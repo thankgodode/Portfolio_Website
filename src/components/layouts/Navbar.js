@@ -21,14 +21,14 @@ function Navbar() {
 
     return (
         <>
-            <div className="overlay" style={{ zIndex: 1 }}
+            {show && <div className="overlay" style={{zIndex:1}}
                 onClick={() => {
                     const nav = document.querySelector("ul")
                     setShow(false)
         
                     nav.classList.remove("show-nav")
                 }}
-            ></div>
+            ></div>}
             <header>
                 <img src={logo} alt="logo" />
                 <ul onClick={showNavbar}>
